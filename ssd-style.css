@@ -1,0 +1,161 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    line-height: 1.6;
+    color: #263238;
+    background-color: #f5f7fa;
+    margin: 0;
+    padding: 20px;
+  }
+  
+  body::before {
+    content: "";
+    display: block;
+    height: 6px;
+    background: linear-gradient(90deg, #283593, #3949ab);
+    margin: -20px -20px 20px -20px;
+  }
+  
+  h1 {
+    color: #283593;
+    margin-bottom: 10px;
+  }
+  
+  h3 {
+    color: #3949ab;
+    margin-top: 25px;
+    font-size: 20px;
+  }
+  
+  a {
+    color: #3949ab;
+    text-decoration: none;
+  }
+  
+  a:hover {
+    text-decoration: underline;
+  }
+  
+  /* section cards */
+  table[width="10%"]:not(.tg),
+  table[width="100%"] {
+    background: #ffffff;
+    border-radius: 12px;
+    padding: 10px 20px;
+    margin-bottom: 24px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+    border: none;
+  }
+  
+  .tg {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    background-color: #ffffff;
+    border: 1px solid #d9dee5;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+  }
+  
+  .tg td,
+  .tg th {
+    padding: 10px 12px;
+    border: 1px solid #d9dee5;
+    text-align: left;
+    vertical-align: top;
+  }
+  
+  .tg-7btt,
+  .tg-bobw {
+    background-color: #3949ab;
+    color: white;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    font-size: 14px;
+  }
+  
+  .tg tbody tr:nth-child(even) td {
+    background-color: #f8f9fc;
+  }
+  
+  .tg tbody tr {
+    transition: background-color 0.15s ease;
+  }
+  
+  .tg tr:hover td {
+    background-color: #f1f3f8;
+  }
+  
+  td b {
+    color: #303f9f;
+  }
+  
+  td > p > b {
+    font-size: 22px;
+    display: inline-block;
+    border-bottom: 3px solid #3949ab;
+    padding-bottom: 4px;
+  }
+  
+  li::marker {
+    color: #3949ab;
+  }
+  
+  hr {
+    border: 0;
+    border-top: 1px solid #d9dee5;
+    margin: 30px 0;
+  }
+  
+  ul,
+  ol {
+    line-height: 1.7;
+  }
+  
+  li {
+    margin-bottom: 5px;
+  }
+  
+  h1#home {
+    font-size: 32px;
+    margin-top: 10px;
+  }
+  
+  @media (max-width: 700px) {
+    body {
+      padding: 10px;
+    }
+  
+    body::before {
+      margin: -10px -10px 10px -10px;
+    }
+  
+    h1#home {
+      font-size: 25px;
+    }
+  
+    .tg {
+      display: block;
+      overflow-x: auto;
+      white-space: nowrap;
+    }
+  
+    .tg td,
+    .tg th {
+      padding: 8px;
+    }
+  
+    hr {
+      margin: 20px 0;
+    }
+  
+    table[width="10%"]:not(.tg),
+    table[width="100%"] {
+      padding: 10px 12px;
+      border-radius: 8px;
+    }
+  }
